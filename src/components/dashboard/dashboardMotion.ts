@@ -35,3 +35,33 @@ export const drift = keyframes`
     transform: translate(-1.5%, 1.5%) scale(0.98);
   }
 `
+
+/** Live: green core softly pulses */
+export const greenBeamCore = keyframes`
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 0 rgba(76, 175, 80, 0.55),
+      0 0 10px rgba(46, 125, 50, 0.45);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow:
+      0 0 0 5px rgba(76, 175, 80, 0.15),
+      0 0 18px rgba(46, 125, 50, 0.75);
+    transform: scale(1.05);
+  }
+`
+
+/** Expanding ring — “beaming” halo */
+export const greenBeamRing = keyframes`
+  0% {
+    transform: scale(0.75);
+    opacity: 0.65;
+  }
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+`
+

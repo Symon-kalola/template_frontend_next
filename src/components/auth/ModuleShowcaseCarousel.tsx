@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import Box from '@mui/material/Box'
-import Chip from '@mui/material/Chip'
 import Fade from '@mui/material/Fade'
 import IconButton from '@mui/material/IconButton'
 import Stack from '@mui/material/Stack'
@@ -9,6 +8,8 @@ import Typography from '@mui/material/Typography'
 import { alpha, useTheme } from '@mui/material/styles'
 import ChevronLeftRounded from '@mui/icons-material/ChevronLeftRounded'
 import ChevronRightRounded from '@mui/icons-material/ChevronRightRounded'
+
+import { ModuleStatusIndicator } from '@/components/dashboard/ModuleStatusIndicator'
 
 import { authCarouselSlides, type AuthCarouselSlide } from './authCarouselData'
 import { AUTH_SHOWCASE_TRANSITION_MS } from './authShowcaseConstants'
@@ -48,12 +49,6 @@ export function ModuleShowcaseCarousel({ onSlideChange }: ModuleShowcaseCarousel
 
   const slide = slides[active]
   const ck = `carousel.${slide.slug}`
-
-  function statusLabel(status: (typeof authCarouselSlides)[number]['status']): string {
-    if (status === 'live') return t('status.live')
-    if (status === 'beta') return t('status.beta')
-    return t('status.comingSoon')
-  }
 
   return (
     <Box
@@ -128,19 +123,13 @@ export function ModuleShowcaseCarousel({ onSlideChange }: ModuleShowcaseCarousel
               maxWidth: 520,
             }}
           >
-            <Chip
-              size="small"
-              label={statusLabel(slide.status)}
-              sx={{
-                alignSelf: 'flex-start',
-                fontWeight: 700,
-                letterSpacing: 0.02,
-                color: 'common.white',
-                bgcolor: alpha('#fff', slide.status === 'live' ? 0.22 : 0.12),
-                border: `1px solid ${alpha('#fff', 0.25)}`,
-                backdropFilter: 'blur(8px)',
-              }}
-            />
+            <Box sx={{ alignSelf: 'flex-start' }}>
+              <ModuleStatusIndicator
+                status={slide.status}
+                variant={slide.status === 'live' ? 'light' : 'default'}
+                heroOnDark
+              />
+            </Box>
             <Typography
               variant="overline"
               sx={{

@@ -1,26 +1,16 @@
-import type { TFunction } from 'i18next'
 import { useTranslation } from 'react-i18next'
 import { Link as RouterLink, useNavigate, useParams } from 'react-router-dom'
 import Alert from '@mui/material/Alert'
 import Box from '@mui/material/Box'
 import Breadcrumbs from '@mui/material/Breadcrumbs'
 import Button from '@mui/material/Button'
-import Chip from '@mui/material/Chip'
 import Link from '@mui/material/Link'
 import Paper from '@mui/material/Paper'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
 
-import { getModuleBySlug, type ModuleStatus } from '@/modules/registry'
-
-function chipForStatus(
-  status: ModuleStatus,
-  t: TFunction,
-): { label: string; color: 'success' | 'warning' | 'default' } {
-  if (status === 'live') return { label: t('status.live'), color: 'success' }
-  if (status === 'beta') return { label: t('status.beta'), color: 'warning' }
-  return { label: t('status.comingSoon'), color: 'default' }
-}
+import { ModuleStatusIndicator } from '@/components/dashboard/ModuleStatusIndicator'
+import { getModuleBySlug } from '@/modules/registry'
 
 export function ModulePlaceholderPage() {
   const { t } = useTranslation()
@@ -41,7 +31,6 @@ export function ModulePlaceholderPage() {
 
   const open = mod.status === 'live' || mod.status === 'beta'
   const Icon = mod.Icon
-  const chip = chipForStatus(mod.status, t)
   const mk = `modules.${mod.slug}`
 
   return (
@@ -78,7 +67,7 @@ export function ModulePlaceholderPage() {
                 <Typography variant="h4" component="h1" fontWeight={800}>
                   {t(`${mk}.name`)}
                 </Typography>
-                <Chip size="small" label={chip.label} color={chip.color} variant={chip.color === 'default' ? 'outlined' : 'filled'} />
+                <ModuleStatusIndicator status={mod.status} />
               </Stack>
               <Typography color="text.secondary" variant="subtitle1" sx={{ mt: 0.5 }}>
                 {t(`${mk}.tagline`)}

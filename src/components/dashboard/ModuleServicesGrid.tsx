@@ -5,20 +5,14 @@ import Button from '@mui/material/Button'
 import Card from '@mui/material/Card'
 import CardActions from '@mui/material/CardActions'
 import CardContent from '@mui/material/CardContent'
-import Chip from '@mui/material/Chip'
 import Grid from '@mui/material/Grid'
 import Stack from '@mui/material/Stack'
 import Typography from '@mui/material/Typography'
 import { alpha, useTheme } from '@mui/material/styles'
 
+import { ModuleStatusIndicator } from '@/components/dashboard/ModuleStatusIndicator'
 import { fadeInUp } from '@/components/dashboard/dashboardMotion'
-import { platformModules, type ModuleStatus } from '@/modules/registry'
-
-function statusColor(status: ModuleStatus): 'success' | 'warning' | 'default' {
-  if (status === 'live') return 'success'
-  if (status === 'beta') return 'warning'
-  return 'default'
-}
+import { platformModules } from '@/modules/registry'
 
 const motionReduce = {
   '@media (prefers-reduced-motion: reduce)': {
@@ -32,12 +26,6 @@ export function ModuleServicesGrid() {
   const { t } = useTranslation()
   const navigate = useNavigate()
   const theme = useTheme()
-
-  function statusLabel(status: ModuleStatus): string {
-    if (status === 'live') return t('status.live')
-    if (status === 'beta') return t('status.beta')
-    return t('status.comingSoon')
-  }
 
   return (
     <Grid container spacing={{ xs: 2, md: 2.5 }}>
@@ -116,12 +104,7 @@ export function ModuleServicesGrid() {
                       <Typography variant="h6" component="h2" fontWeight={800} letterSpacing={-0.2}>
                         {t(`${base}.name`)}
                       </Typography>
-                      <Chip
-                        size="small"
-                        label={statusLabel(mod.status)}
-                        color={statusColor(mod.status)}
-                        sx={{ fontWeight: 700, flexShrink: 0 }}
-                      />
+                      <ModuleStatusIndicator status={mod.status} />
                     </Stack>
                     <Typography variant="subtitle2" color="text.secondary" fontWeight={600}>
                       {t(`${base}.tagline`)}
