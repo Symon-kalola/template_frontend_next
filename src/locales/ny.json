@@ -1,0 +1,169 @@
+{
+  "common": {
+    "brand": "265DigitalAgents",
+    "there": "inu"
+  },
+  "theme": {
+    "colorMode": "Mtundu wa mitundu",
+    "light": "Kuunika",
+    "dark": "Mdima",
+    "system": "Monga kompyuta"
+  },
+  "language": {
+    "label": "Chiyankhulo",
+    "en": "Chingerezi",
+    "ny": "Chichewa"
+  },
+  "nav": {
+    "dashboard": "Dashboard"
+  },
+  "status": {
+    "live": "Ikugwira",
+    "beta": "Beta",
+    "comingSoon": "Zikubwera posacedwa"
+  },
+  "auth": {
+    "loginSubtitle": "Akaunti imodzi ya Nyumba, SendUs, ndi ntchito zina zadigital za Malawi.",
+    "email": "Imelo",
+    "password": "Chinsinsi",
+    "fullName": "Dzina lonse",
+    "signIn": "Lowani",
+    "signingIn": "Mukulowa…",
+    "createAccount": "Pangani akaunti",
+    "registerSubtitle": "Lowani kuti mupeze Nyumba, SendUs, ndi ma modulu ena omwe akubwera.",
+    "register": "Lembetsani",
+    "creating": "Mukulembetsa…",
+    "noAccount": "Mulibe akaunti?",
+    "registerLink": "Lembetsani",
+    "haveAccount": "Muli ndi akaunti kale?",
+    "signInLink": "Lowani",
+    "backendHint": "Backend iyenera kukhala pa <0>/api</0> (wonani <1>vite.config.ts</1>). Ikani <2>VITE_API_BASE_URL</2> pa production.",
+    "carouselAria": "Ma modulu a 265DigitalAgents",
+    "carouselPrev": "Tsamba lapitapo",
+    "carouselNext": "Tsamba lotsatila",
+    "carouselDot": "Onetsani tsamba {{n}}",
+    "carouselStack": "Ntchito zadigital za Malawi"
+  },
+  "errors": {
+    "signInFailed": "Kulowa kwalephera. Onani URL ya API ndi kuti server ikugwira.",
+    "generic": "Chinachake sichinathe. Yesaninso.",
+    "registrationFailed": "Kulembetsa kwalephera.",
+    "updateProfile": "Sitingathe kusintha mbiri.",
+    "somethingWrong": "Chinachake sichinathe."
+  },
+  "dashboard": {
+    "hub": "Hub",
+    "welcomeBack": "Takulandirani, {{name}}",
+    "subtitle": "Malo amodzi a ntchito zadigital za Malawi — kulowa kamodzi, ntchito zonse.",
+    "blurbRich": "Kuchoka kupanga kukodetsa kwa <0>265Nyumba</0> kupita ku ntchito za <1>SendUs</1>, zonse zili pamenepa.",
+    "yourModules": "Ma modulu anu",
+    "modulesIntro": "Sankhani ntchito kuti mutsegule malo ake. Zotsekedwa zikubwera posacedwa kwa mabungwe ndi ogwiritsa oyamba."
+  },
+  "modules": {
+    "openModule": "Tsegulani module",
+    "locked": "Zatsekedwa",
+    "nyumba": {
+      "name": "265Nyumba",
+      "tagline": "Kukodetsa popanda malipiro a ma agent",
+      "description": "Alandlord amasindikiza manyumba; akukodetsa amasaka mizinda, mtengo, ndi zipinda—ndiponso kulumikizana mwini wake. Zapangidwa kuchepetsa vuto la “half rent kwa ma agent” mu Malawi."
+    },
+    "sendus": {
+      "name": "SendUs",
+      "tagline": "Ntchito zofunika nthawi yomweyo",
+      "description": "Pezani zovala, kutenga mapharcela, kulipira mabili, kuyimirira layini, kapena kuthandizira ndi ma document. Othandizira amasankha ntchito monga “Uber ya ntchito zochepa”."
+    },
+    "courier": {
+      "name": "265Courier",
+      "tagline": "Maparcela mizinda mitatu",
+      "description": "Bookani Blantyre ↔ Lilongwe (and beyond) ndi kutsatira ndi mitengo yovomerezeka kwa othumiza ndi odziwa."
+    },
+    "market": {
+      "name": "265Market",
+      "tagline": "Gulani ndi kugulitsa pafupi",
+      "description": "Zamagetsi, mipando, foni, ndi magalimoto—mawonekedwe pakati pa anthu ndi macheza otetezeka kuposa mafeso a Facebook."
+    },
+    "services": {
+      "name": "265Services",
+      "tagline": "Pezani anthu odziwa",
+      "description": "Mapayipi, magetsi, oyamba, akunyamula—ikani ntchito, linganizani, ndiponso kumanga othandizira oyambirira pafupi."
+    },
+    "jobs": {
+      "name": "265Jobs",
+      "tagline": "Ntchito zochepa",
+      "description": "Kuthandizira m'makono, kusasa, chitetezo, ntchito yochepa—mabwenzi ndi ogwira ntchito yosalemera."
+    },
+    "property-mgmt": {
+      "name": "265Property Management",
+      "tagline": "Kwa alandlord ambiri",
+      "description": "Rent rolls, zolemb za akukodetsa, zidziwitso, zovuta, ndi mawonekedwe oyambirira—pambuyo pa Nyumba, kuti muthandize ofunika."
+    },
+    "payments": {
+      "name": "265Payments",
+      "tagline": "Wallet ndi malipiro",
+      "description": "Ndola ya foni ndi mabanki m'ma module: escrow ya SendUs, malipiro za Nyumba, ndi kupereka kwa othandizira."
+    },
+    "ride": {
+      "name": "265Ride",
+      "tagline": "Mayendedwe ogawana",
+      "description": "Mayendedwe a njinga kapena magalimoto mu Blantyre / Lilongwe—mothandizika ndi chikhulupiriro ndi malipiro pa platform."
+    },
+    "launchpad": {
+      "name": "Module launchpad",
+      "tagline": "Mkati",
+      "description": "Malo oyimirira zotsatira (monga agritech, nyumba za ophunzira, kapena logistics). Sinthani ndi ma modulu oyambirira."
+    }
+  },
+  "carousel": {
+    "nyumba": {
+      "name": "265Nyumba",
+      "tagline": "Kukodetsa popanda malipiro a ma agent",
+      "description": "Alandlord amasindikiza manyumba; akukodetsa amasaka mizinda, mtengo, ndi zipinda—ndiponso kulumikizana mwini wake mwini."
+    },
+    "sendus": {
+      "name": "SendUs",
+      "tagline": "Ntchito zofunika nthawi yomweyo",
+      "description": "Zovala, mapharcela, mabili, ndi ma document—othandizira amasankha ntchito mukafuna."
+    },
+    "courier": {
+      "name": "265Courier",
+      "tagline": "Maparcela mizinda mitatu",
+      "description": "Bookani Blantyre ↔ Lilongwe ndi kutsatira ndi mitengo yovomerezeka kwa othumiza ndi odziwa."
+    },
+    "market": {
+      "name": "265Market",
+      "tagline": "Gulani ndi kugulitsa pafupi",
+      "description": "Mawonekedwe pakati pa anthu ndi macheza otetezeka kuposa mafeso a social."
+    },
+    "services": {
+      "name": "265Services",
+      "tagline": "Pezani anthu odziwa",
+      "description": "Mapayipi, magetsi, oyamba—ikani ntchito, linganizani, ndiponso kumanga pafupi."
+    },
+    "payments": {
+      "name": "265Payments",
+      "tagline": "Wallet ndi malipiro",
+      "description": "Ndola ya foni ndi mabanki m'ma module—escrow, malipiro, ndi kupereka pamalo pamodzi."
+    }
+  },
+  "modulePage": {
+    "notFound": "Module imeneyi ilibe.",
+    "backDashboard": "Bwererani ku dashboard",
+    "shellOnly": "UI yokha—lumikizani ndi mapu, ntchito, ma map, ndi ma API ya Express mukasangalala.",
+    "notEnabled": "Module imeneyi sinayambidwe.",
+    "allModules": "Ma module onse"
+  },
+  "account": {
+    "profileTooltip": "Mbiri ndi akaunti",
+    "openMenu": "Tsegulani menyu ya mbiri",
+    "editProfile": "Sinthani mbiri",
+    "editProfileSecondary": "Sinthani dzina ndi imelo",
+    "signOut": "Tulukani",
+    "editDialogTitle": "Sinthani mbiri",
+    "dialogHint": "Zimakasintha mukamagwiritsa <0>PATCH /users/me</0>.",
+    "save": "Sungani",
+    "saving": "Mukusunga…",
+    "cancel": "Letsani",
+    "profileNotLoaded": "Zambiri za mbiri sizikuoneka. Tulukani ndi lowaninso, kapena onani kuti kulowa kumabweretsa user.",
+    "role": "Udindo: {{role}}"
+  }
+}

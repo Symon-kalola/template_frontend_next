@@ -1,0 +1,169 @@
+{
+  "common": {
+    "brand": "265DigitalAgents",
+    "there": "there"
+  },
+  "theme": {
+    "colorMode": "Color mode",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "Match system"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "ny": "Chichewa"
+  },
+  "nav": {
+    "dashboard": "Dashboard"
+  },
+  "status": {
+    "live": "Live",
+    "beta": "Beta",
+    "comingSoon": "Coming soon"
+  },
+  "auth": {
+    "loginSubtitle": "One account for Nyumba, SendUs, and the rest of the Malawi digital services stack.",
+    "email": "Email",
+    "password": "Password",
+    "fullName": "Full name",
+    "signIn": "Sign in",
+    "signingIn": "Signing in…",
+    "createAccount": "Create account",
+    "registerSubtitle": "Join 265DigitalAgents to access Nyumba, SendUs, and upcoming modules.",
+    "register": "Register",
+    "creating": "Creating…",
+    "noAccount": "No account?",
+    "registerLink": "Register",
+    "haveAccount": "Already have an account?",
+    "signInLink": "Sign in",
+    "backendHint": "Backend expected at <0>/api</0> (see <1>vite.config.ts</1> proxy). Set <2>VITE_API_BASE_URL</2> for production builds.",
+    "carouselAria": "265DigitalAgents modules",
+    "carouselPrev": "Previous slide",
+    "carouselNext": "Next slide",
+    "carouselDot": "Show slide {{n}}",
+    "carouselStack": "Malawi digital stack"
+  },
+  "errors": {
+    "signInFailed": "Sign-in failed. Check API URL and that the server is running.",
+    "generic": "Something went wrong. Try again.",
+    "registrationFailed": "Registration failed.",
+    "updateProfile": "Could not update profile.",
+    "somethingWrong": "Something went wrong."
+  },
+  "dashboard": {
+    "hub": "Hub",
+    "welcomeBack": "Welcome back, {{name}}",
+    "subtitle": "Malawi's all-in-one digital services platform — one login, every service.",
+    "blurbRich": "From fair rentals on <0>265Nyumba</0> to errands on <1>SendUs</1>, everything lives behind this single hub.",
+    "yourModules": "Your modules",
+    "modulesIntro": "Choose a service to open its workspace. Locked tiles are on the roadmap for partners and early users."
+  },
+  "modules": {
+    "openModule": "Open module",
+    "locked": "Locked",
+    "nyumba": {
+      "name": "265Nyumba",
+      "tagline": "Rent without agent fees",
+      "description": "Landlords list homes; tenants search by city, price, and rooms—then contact owners directly. Built to cut the “half rent to agents” problem in Malawi."
+    },
+    "sendus": {
+      "name": "SendUs",
+      "tagline": "Errands on demand",
+      "description": "Request groceries, parcel pickup, bill payments, queue standing, or document runs. Runners accept jobs like a lightweight “Uber for errands”."
+    },
+    "courier": {
+      "name": "265Courier",
+      "tagline": "City-to-city parcels",
+      "description": "Book Blantyre ↔ Lilongwe (and beyond) deliveries with tracking and clear pricing for senders and drivers."
+    },
+    "market": {
+      "name": "265Market",
+      "tagline": "Buy & sell locally",
+      "description": "Electronics, furniture, phones, and cars—peer-to-peer listings with chat and safer handoffs than random Facebook threads."
+    },
+    "services": {
+      "name": "265Services",
+      "tagline": "Find trusted pros",
+      "description": "Plumbers, electricians, cleaners, movers—post a job, compare offers, and hire verified service providers near you."
+    },
+    "jobs": {
+      "name": "265Jobs",
+      "tagline": "Gigs & short work",
+      "description": "Event help, cleaning shifts, security, temp labour—quick jobs for students and casual workers."
+    },
+    "property-mgmt": {
+      "name": "265Property Management",
+      "tagline": "For multi-unit landlords",
+      "description": "Rent rolls, tenant records, reminders, maintenance tickets, and simple reports—after Nyumba scales, this owns the landlord back-office."
+    },
+    "payments": {
+      "name": "265Payments",
+      "tagline": "Wallet & settlements",
+      "description": "Mobile money and bank rails across modules: escrow for SendUs, listing fees for Nyumba, and payouts to runners or couriers."
+    },
+    "ride": {
+      "name": "265Ride",
+      "tagline": "Suggested: shared mobility",
+      "description": "Motorbike or car rides and pooled routes in Blantyre / Lilongwe—natural upsell once trust and payments exist on the platform."
+    },
+    "launchpad": {
+      "name": "Module launchpad",
+      "tagline": "Internal",
+      "description": "Placeholder for future verticals (e.g. agritech leads, student housing, or B2B logistics). Swap in real modules as you ship."
+    }
+  },
+  "carousel": {
+    "nyumba": {
+      "name": "265Nyumba",
+      "tagline": "Rent without agent fees",
+      "description": "Landlords list homes; tenants search by city, price, and rooms—then contact owners directly."
+    },
+    "sendus": {
+      "name": "SendUs",
+      "tagline": "Errands on demand",
+      "description": "Groceries, parcel pickup, bill payments, and document runs—runners accept jobs when you need them."
+    },
+    "courier": {
+      "name": "265Courier",
+      "tagline": "City-to-city parcels",
+      "description": "Book Blantyre ↔ Lilongwe deliveries with tracking and clear pricing for senders and drivers."
+    },
+    "market": {
+      "name": "265Market",
+      "tagline": "Buy & sell locally",
+      "description": "Peer-to-peer listings with chat and safer handoffs than random social threads."
+    },
+    "services": {
+      "name": "265Services",
+      "tagline": "Find trusted pros",
+      "description": "Plumbers, electricians, cleaners—post a job, compare offers, and hire nearby."
+    },
+    "payments": {
+      "name": "265Payments",
+      "tagline": "Wallet & settlements",
+      "description": "Mobile money and bank rails across modules—escrow, fees, and payouts in one place."
+    }
+  },
+  "modulePage": {
+    "notFound": "This module does not exist.",
+    "backDashboard": "Back to dashboard",
+    "shellOnly": "UI shell only—wire this route to feature pages (listings, tasks, maps) and your Express APIs when ready.",
+    "notEnabled": "This module is not enabled yet.",
+    "allModules": "All modules"
+  },
+  "account": {
+    "profileTooltip": "Profile & account",
+    "openMenu": "Open profile menu",
+    "editProfile": "Edit profile",
+    "editProfileSecondary": "Update your name and email",
+    "signOut": "Sign out",
+    "editDialogTitle": "Edit profile",
+    "dialogHint": "Changes sync when your API implements <0>PATCH /users/me</0>.",
+    "save": "Save changes",
+    "saving": "Saving…",
+    "cancel": "Cancel",
+    "profileNotLoaded": "Profile details aren't loaded. Sign out and sign in again, or check that login returns a user object.",
+    "role": "Role: {{role}}"
+  }
+}
